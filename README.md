@@ -20,6 +20,7 @@ You are going to use NVM (Node Version Manager). Here's a summary of what you ha
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 source ~/.bashrc
 nvm install v10.16.3
+nvm use v10.16.3
 ```
 
 You can verify that it worked by running `node -v`, which should display:
@@ -34,6 +35,7 @@ Extract the archive, and run `nvm-setup.exe`. Complete the setup wizard. Then, q
 
 ```sh
 nvm install v10.16.3
+nvm use v10.16.3
 ```
 
 Running `node -v` should display: `v10.16.3`.
@@ -54,7 +56,7 @@ cd js-training-tdd
 
 ## Testing
 
-Once you have coded your masterpiece, you can start to test your solutions.
+Once you have coded your masterpiece, you can start testing your solutions.
 
 You can run tests for a single section:
 ```sh
