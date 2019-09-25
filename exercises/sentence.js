@@ -8,6 +8,18 @@
 
 // Your code:
 
+let sentence = (array) => {
+  let result = '';
+  for (let i = 0; i < array.length; i++) {
+    if (i < (array.length - 1)) {
+      result += array[i] + ' ';
+    } else {
+      result += array[i];
+    }
+  }
+  return result;
+}
+
 //* Begin of tests
 const assert = require('assert');
 
