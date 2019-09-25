@@ -8,6 +8,14 @@
 
 // Your code:
 
+let total = (arrNumber) => {
+  let totalNum = 0
+  for (let i = 0; i < arrNumber.length; i++) {
+    totalNum += arrNumber[i];
+  }
+  return totalNum;
+}
+
 //* Begin of tests
 const assert = require('assert');
 
