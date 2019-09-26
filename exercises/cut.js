@@ -12,8 +12,28 @@
 
 // Your code:
 
+let cutFirst = (str) => {
+  str = str.split("");
+  str = str.splice(0, 2);
+  return str.join("");
+}
+
+let cutLast = (str) => {
+  let len = str.length;
+  str = str.split("");
+  str = str.splice(len-2, 2);
+  return str.join("");
+}
+
+let cutFirstLast = (str) => {
+  str = cutFirst(str);
+  str = cutLast(str);
+  return str;
+}
+
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(cutFirstLast('HAHAOU'), 'HA');
+assert.strictEqual(cutFirstLast('HEHEHE'), 'HE');
 // End of tests */
