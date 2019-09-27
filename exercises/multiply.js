@@ -10,6 +10,23 @@
 
 // Your code:
 
+let multiply = (numberOne, numberTwo) => {
+  let total = 0;
+  if (numberOne >= 0) {
+    for(let i = 0; i < numberOne; i++) {
+      total += numberTwo;
+    }
+    return total;
+  }
+  else {
+    numberOne = -numberOne;
+    for(let i = 0; i < numberOne; i++) {
+      total += numberTwo;
+    }
+    return -total;
+  }
+}
+
 //* Begin of tests
 const assert = require('assert');
 
