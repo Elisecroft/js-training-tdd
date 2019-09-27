@@ -9,6 +9,13 @@
 
 // Your code:
 
+let capitalize = (str) => {
+  str = str.toLowerCase();
+  str = str.split("");
+  str[0] = str[0].toUpperCase();
+  return str.join("");
+}
+
 //* Begin of tests
 const assert = require('assert');
 
