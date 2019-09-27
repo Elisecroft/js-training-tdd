@@ -14,8 +14,28 @@
 
 // Your code:
 
+let keepFirst = (str) => {
+  str = str.split("");
+  let firstStr = str[0] + str[1];
+  return firstStr;
+}
+
+let keepLast = (str) => {
+  str = str.split("");
+  let strLen = str.length;
+  let lastStr = str[strLen - 2] + str[strLen - 1];
+  return lastStr;
+}
+
+let keepFirstLast = (str) => {
+  str = keepFirst(str);
+  str = keepLast(str);
+  return str;
+}
+
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(keepFirstLast('HAHA'), 'HA');
+assert.strictEqual(keepFirstLast('HEHEHE'), 'HE');
 // End of tests */
