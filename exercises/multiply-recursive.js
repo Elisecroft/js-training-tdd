@@ -11,6 +11,32 @@
 
 // Your code:
 
+let multiply = (numberOne, numberTwo) => {
+  if (numberOne >= 0 && numberTwo < 0) {
+    numberTwo = -numberTwo;
+    let result = -(("i").repeat(numberOne).repeat(numberTwo).length);
+    if (result === -0) {
+      return 0;
+    } else {
+      return result;
+    }
+  } else if (numberTwo >= 0 && numberOne < 0) {
+    numberOne = -numberOne;
+    let result = -(("i").repeat(numberOne).repeat(numberTwo).length);
+    if (result === -0) {
+      return 0;
+    } else {
+      return result;
+    }
+  } else if (numberTwo < 0 && numberOne < 0) {
+    numberTwo = -numberTwo;
+    numberOne = -numberOne;
+    return ("i").repeat(numberOne).repeat(numberTwo).length;
+  } else {
+    return ("i").repeat(numberOne).repeat(numberTwo).length;
+  } 
+}
+
 //* Begin of tests
 const assert = require('assert');
 
